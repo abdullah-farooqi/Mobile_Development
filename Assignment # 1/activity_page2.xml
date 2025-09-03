@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".page2">
+
+    <!-- This is for introductory text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:background="@color/page2_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/socially"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Socially"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/socially"
+                android:layout_centerHorizontal="true"
+                android:text="Create An Account and Sign Up"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="23dp"
+                android:src="@drawable/arrow_back"
+                app:tint="@color/white" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!-- This is for camera  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:background="@color/page2_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/camera_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/circle"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="50dp"
+                android:layout_height="56dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/camera" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.4"
+        android:background="@color/page2_color">
+        <!-- This is for user info -->
+        <!-- This is for user info -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--This is for user name-->
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Username"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/username_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Username"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/bar"
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/username_entry"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="4dp"
+                android:background="#FFFFFF" />
+
+            <!--This is for name -->
+            <TextView
+                android:id="@+id/your_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bar"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Your Name"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/Yourname_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/your_name"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Name"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/bar2"
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/Yourname_entry"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="4dp"
+                android:background="#FFFFFF" />
+
+            <!--This is for last name  -->
+            <TextView
+                android:id="@+id/your_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bar2"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Your Last Name"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/YourLastname_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/your_last_name"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Last Name"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <View
+                android:id="@+id/bar3"
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/YourLastname_entry"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="4dp"
+                android:background="#FFFFFF" />
+
+            <!--This is for date of birth  -->
+            <TextView
+                android:id="@+id/your_bd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bar3"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Date of Birth"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/YourBirthday_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/your_bd"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:hint="DD-MM-YYYY"
+                android:inputType="date"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/bar4"
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/YourBirthday_entry"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="4dp"
+                android:background="#FFFFFF" />
+
+            <!--This is for email  -->
+            <TextView
+                android:id="@+id/your_Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bar4"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="E-mail"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/your_Email_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/your_Email"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter E-mail"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/bar5"
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/your_Email_entry"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="4dp"
+                android:background="#FFFFFF" />
+
+            <!--This is for password  -->
+            <TextView
+                android:id="@+id/your_passoward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bar5"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Password"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/your_passoward_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/your_passoward"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/visibilty"
+                android:layout_width="38dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/eye"
+                app:tint="@color/white" />
+
+            <View
+                android:id="@+id/bar6"
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/your_passoward_entry"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="4dp"
+                android:background="#FFFFFF" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/page2_color">
+
+            <Button
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:backgroundTint="@color/page2_account_color"
+                android:text="Create an Account"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:cornerRadius="8dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
