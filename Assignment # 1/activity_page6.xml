@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page6"
+    android:weightSum="10"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="49dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/lens"
+                app:tint="@color/page5_button_color"
+
+                />
+
+
+            <LinearLayout
+                android:id="@+id/search_bar"
+                android:layout_width="317dp"
+                android:layout_height="47dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/page6_search_icon"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/search"
+                        app:tint="@color/page5_button_color"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Search"
+                        android:textColor="@color/page5_button_color"
+                        android:textSize="20dp"
+                        android:layout_toRightOf="@+id/page6_search_icon"
+                        android:layout_marginTop="10dp"
+
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/page6_shop"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="@color/white"
+                android:text="Shop"
+                android:textAllCaps="false"
+                android:textColor="@color/page6_button_color"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/page6_style"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="3dp"
+
+                android:layout_toRightOf="@+id/page6_shop"
+                android:backgroundTint="@color/white"
+                android:text="Style"
+                android:textAllCaps="false"
+                android:textColor="@color/page6_button_color"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/page6_sports"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_toRightOf="@+id/page6_style"
+                android:backgroundTint="@color/white"
+                android:text="Sport"
+                android:textAllCaps="false"
+                android:textColor="@color/page6_button_color"
+                android:textSize="15sp"
+
+                android:textStyle="bold"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/page6_auto"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="3dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/page6_sports"
+                android:backgroundTint="@color/white"
+                android:text="Auto"
+                android:textAllCaps="false"
+                android:textColor="@color/page6_button_color"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:cornerRadius="8dp" />
+
+
+            <Button
+                android:id="@+id/page6_Music"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="78dp"
+                android:layout_height="41dp"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/page6_auto"
+                android:backgroundTint="@color/white"
+                android:text="Music"
+                android:textAllCaps="false"
+                android:textColor="@color/page6_button_color"
+                android:textSize="15sp"
+
+                android:textStyle="bold"
+                app:cornerRadius="8dp" />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/Search_img1"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/Search_img2"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/page6_bar1"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginHorizontal="3dp"
+                    android:background="#000000" />
+
+                <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/Search_img4"
+                android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="1dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_img3"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="1dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_img5"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_img6"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_img7"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/search_img8"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="Suspicious0dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/home_page"
+                android:layout_width="90dp"
+                android:layout_height="69dp"
+                android:src="@drawable/home_notfilled"
+                app:tint="@color/page5_button_color" />
+
+            <ImageView
+                android:id="@+id/search_btn"
+                android:layout_width="90dp"
+                android:layout_height="69dp"
+                android:layout_marginLeft="-17dp"
+                android:layout_toRightOf="@+id/home_page"
+                android:src="@drawable/search_filled_icon"
+                app:tint="@color/page5_button_color" />
+
+            <ImageView
+                android:id="@+id/post_btn"
+                android:layout_width="90dp"
+                android:layout_height="69dp"
+                android:layout_marginLeft="-13dp"
+                android:layout_toRightOf="@+id/search_btn"
+                android:src="@drawable/post_icon"
+                app:tint="@color/page5_button_color" />
+
+            <ImageView
+                android:id="@+id/heart_btn"
+                android:layout_width="67dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/post_btn"
+                android:src="@drawable/heart_blank"
+                app:tint="@color/page5_button_color" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_btn"
+                android:layout_width="35dp"
+                android:layout_height="53dp"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginTop="2dp"
+
+                android:layout_marginRight="21dp"
+                android:src="@drawable/person2_ppf"
+                app:civ_border_color="#DD2A7B"
+                app:civ_border_width="2dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
